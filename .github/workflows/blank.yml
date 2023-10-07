@@ -35,7 +35,7 @@ jobs:
         run: |-
           echo "TOKEN_URL=$APIGEE_PRE_PROD_TOKEN_URL" >> $GITHUB_ENV
           echo "API_APP_CLIENT_ID=${{ secrets.API_TOKEN }}" >> $GITHUB_ENV
-          echo "FWTRACK_DB_CS=${{ secrets.API_URL }}" >> $GITHUB_ENV
+          echo "FWTRACK_DB_CS=${{ vars.API_URL }}" >> $GITHUB_ENV
           echo "CUPBUILDER_ENVIRONMENT=PROD" >> $GITHUB_ENV
           
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
